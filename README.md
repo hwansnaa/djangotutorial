@@ -29,7 +29,7 @@ urlpatterns = [
     re_path(r'^write/', write, name = 'write'),
     re_path(r'^view/(?P<num>[0-9]+)/$', view),
 ]}</code></pre>
-![Alt text]("Django Architecture")
+![Alt text](https://github.com/seunghwanji/djangotutorial/blob/master/image/Django%20Architecture.png "Django Architecture")
 > link : <https://pythonhosted.org/MyTARDIS/architecture.html>    
 
 ### Project와 App
@@ -168,7 +168,7 @@ def view(request, num = "1"):
 </body>
 </html>
 ```
-
+![Alt text](https://github.com/seunghwanji/djangotutorial/blob/master/image/write.png "write")
 2. **list.html**
 ```
 <!DOCTYPE html>
@@ -187,7 +187,7 @@ def view(request, num = "1"):
 </body>
 </html>
 ```
-
+![Alt text](https://github.com/seunghwanji/djangotutorial/blob/master/image/list.png "list")
 3. **view.html**
 ```
 <!DOCTYPE html>
@@ -208,6 +208,7 @@ def view(request, num = "1"):
 </body>
 </html>
 ```
+![Alt text](https://github.com/seunghwanji/djangotutorial/blob/master/image/view.png "view")
 * **server를 작동시켜 변화를 파악**
 ```
 python admin.py runserver
@@ -225,3 +226,4 @@ python admin.py runserver
 * manage.py를 실행하기위해 ./manage.py ~~ 대신 python manage.py ~~ 로 사용
 * 트리구조 확인에서 폴더 뿐 아니라 파일까지 확인하고싶을 때에는 /f 추가
 >> <pre><code>{tree /f}</code></pre>
+![Alt text](https://github.com/seunghwanji/djangotutorial/blob/master/image/tree%EA%B5%AC%EC%A1%B0.png "tree ")
