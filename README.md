@@ -168,7 +168,7 @@ def view(request, num = "1"):
 </body>
 </html>
 ```
-![Alt text](https://github.com/seunghwanji/djangotutorial/blob/master/image/write.png "write")
+
 2. **list.html**
 ```
 <!DOCTYPE html>
@@ -187,7 +187,7 @@ def view(request, num = "1"):
 </body>
 </html>
 ```
-![Alt text](https://github.com/seunghwanji/djangotutorial/blob/master/image/list.png "list")
+
 3. **view.html**
 ```
 <!DOCTYPE html>
@@ -208,7 +208,7 @@ def view(request, num = "1"):
 </body>
 </html>
 ```
-![Alt text](https://github.com/seunghwanji/djangotutorial/blob/master/image/view.png "view")
+
 * **server를 작동시켜 변화를 파악**
 ```
 python admin.py runserver
