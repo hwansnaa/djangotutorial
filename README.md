@@ -6,19 +6,30 @@
 """
 
 ### MVC, MFC
-> Django는 기본적으로 MVC 패턴을 취한다.
->> Model : 데이터를 안전하게 저장 (Back-End)    
->> View : 데이터를 적절하게 선정하여 유저에게 보여줌 (Front-End)    
->> Controller(In Django, Templates) : 사용자의 입력과 이벤트에 반응하여 Model과 View를 업데이트 (Front-End, Back-End)    
++ Model : 데이터를 안전하게 저장 (Back-End)    
++ View : 데이터를 적절하게 선정하여 유저에게 보여줌 (Front-End)    
++ Controller : 사용자의 입력과 이벤트에 반응하여 Model과 View를 업데이트 (Front-End, Back-End)    
 * 과거에는 여러개의 작업이 하나의 프로그램 안에 들어있어 유지보수가 힘들었지만, MVC 패턴을 활용하여 효율적인 개발이 가능해짐
+
+### MVT Pattern(In django)
++ Model : 응용프로그램의 데이터 구조를 정의하고 데이터베이스의 기록을 관리(추가, 수정, 삭제 등)
++ View : HTTP 요청을 수신하고 HTTP을답을 반환, Model을 통해 요청을 충족시키는데 필요한 데이터에 접근
++ Templates : 파일의 구조나 레이아웃을 정의하고 실제 내용을 보여주는데 사용
+
 ### Django 개념(구성요소)
 > wsgi.py, urls.py, view.py, model.py, forms.py, example.html, setting.py ...    
 * **manage.py**
->> Django 프로젝트와 다양한 방법으로 상호작용하는 커맨드라인의 유틸리티
+  + Django 프로젝트와 다양한 방법으로 상호작용하는 커맨드라인의 유틸리티
 * **settings.py**
->> 현재 Django프로젝트의 환경 및 구성을 저장
+  + 현재 Django프로젝트의 환경 및 구성을 저장
 * **urls.py**
->> 현재 Django project의 URL선언을 저장. Django로 작성된 사이트의 "목차"라고 할 수 있음
+  + 현재 Django project의 URL선언을 저장. Django로 작성된 사이트의 "목차"라고 할 수 있음
+* **wsgi.py**
+  + 웹서버를 개발할 때 웹서버(=HTTP server)와 웹어플리케션 서버(=WAS)를 연결하는 작업을 수행
+  
+
+  
+ 
 <pre><code>{
 from django.contrib import admin
 from django.urls import path, re_path
