@@ -5,7 +5,7 @@
 
 """
 
-### MVC, MFC
+### MVC
 + Model : 데이터를 안전하게 저장 (Back-End)    
 + View : 데이터를 적절하게 선정하여 유저에게 보여줌 (Front-End)    
 + Controller : 사용자의 입력과 이벤트에 반응하여 Model과 View를 업데이트 (Front-End, Back-End)    
