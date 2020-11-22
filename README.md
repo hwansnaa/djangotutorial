@@ -26,7 +26,9 @@
   + 현재 Django project의 URL선언을 저장. Django로 작성된 사이트의 "목차"라고 할 수 있음
 * **wsgi.py**
   + 웹서버를 개발할 때 웹서버(=HTTP server)와 웹어플리케션 서버(=WAS)를 연결하는 작업을 수행
-  
+* **asgi.py**(Asynchronous Server Gateway Interface)
+  + django-channels가 사용하고 있는 Daphne와 django-channels가 작동하는 기반
+  + django-channels를 사용할 때 알아야함
 
   
  
